@@ -105,9 +105,56 @@ h3{color:rgb(224, 153, 86);}
     margin: 0.3rem;
     animation: pulse 1s infinite;
 }
-@media(min-width:422px){
-    .countContainer{
-        display:flex;
+@media (max-width: 420px) {
+    .gameContainer {
+        width: 100%; /* Ocupa toda la anchura disponible */
+        padding: 1rem;
+    }
+    
+    .boton, .pulse {
+        width: 100%; /* Botones ocupan toda la anchura del contenedor */
+        font-size: 0.9rem; /* Ajusta el tamaño del texto para pantallas pequeñas */
+    }
+
+    .naturaleza, .cultura, .viajes, .deportes, .arte {
+        height: 150px; /* Reduce la altura de las imágenes en dispositivos más pequeños */
+    }
+}
+
+@media (min-width: 421px) and (max-width: 768px) {
+    .gameContainer {
+        padding: 1.5rem;
+        width: 80%;
+    }
+    
+    .boton, .pulse {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .naturaleza, .cultura, .viajes, .deportes, .arte {
+        height: 180px;
+    }
+}
+
+@media (min-width: 769px) {
+    .gameContainer {
+        width: 60%;
+        padding: 2rem;
+    }
+
+    .countContainer {
+        display: flex;
         justify-content: space-around;
+        align-items: center;
+    }
+
+    .boton, .pulse {
+        width: 80%; /* Ajusta la anchura de los botones para mantenerlos más estrechos */
+        font-size: 1.1rem;
+    }
+
+    .naturaleza, .cultura, .viajes, .deportes, .arte {
+        height: 200px; /* Mantén el tamaño completo en pantallas grandes */
     }
 }

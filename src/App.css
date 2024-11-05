@@ -10,3 +10,27 @@ body {
   color: white;
   overflow: hidden; /* Oculta el contenido que desborda */
 }
+
+/* Dispositivos pequeños (por ejemplo, teléfonos móviles) */
+@media (max-width: 600px) {
+  .container {
+      padding: 1rem;
+      font-size: 0.9rem;
+  }
+}
+
+/* Dispositivos medianos (por ejemplo, tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .container {
+      padding: 1.5rem;
+      font-size: 1rem;
+  }
+}
+
+/* Dispositivos grandes (por ejemplo, escritorio) */
+@media (min-width: 1025px) {
+  .container {
+      padding: 2rem;
+      font-size: 1.1rem;
+  }
+}

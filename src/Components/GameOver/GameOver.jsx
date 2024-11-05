@@ -6,7 +6,7 @@ import { useLocation } from 'react-router-dom';
 
 const GameOver = (props) => {
     const location = useLocation();
-    const { puntuacion, vidas } = location.state || {};
+    const { puntuacion} = location.state || {};
 
     return (
         <>  <div className={style.container}>
@@ -16,7 +16,6 @@ const GameOver = (props) => {
                 </div>
                 <div className={style.gameOver}>
                     <p>Puntuación: {puntuacion}</p>
-                    <p>Vidas restantes: {vidas}</p>
                 </div>
                 <div className={style.buttonContainer}>
                     <Link to ='/'>VOLVER</Link>

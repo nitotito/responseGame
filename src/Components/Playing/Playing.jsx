@@ -51,7 +51,7 @@ const Playing = () =>{
         setVidas(vidas >0 ? vidas - 1 : 0);
         setTime(20);
 
-        if (vidas - 1 <= 0) {
+        if (vidas - 1 < 0) {
             setGameOver(true);
         }
     }

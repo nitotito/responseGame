@@ -1,0 +1,46 @@
+
+.container{
+    text-align: center;
+    display:flex;              /* Activa el modelo Flexbox */
+    flex-direction:column;       /* Dispone los botones en fila (puedes usar 'column' para columna) */
+    justify-content: center;   /* Alinea los botones al centro (puedes usar 'space-between', 'space-around', etc.) */
+    gap: 1rem;                 /* Espacio entre los botones */
+    margin-top: 0.5rem; 
+
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    max-width: 600px;
+    width: 90%; 
+    
+}
+.containerImg{
+    display:flex;
+    justify-content: center;
+}
+
+.titulo{
+    text-align: center;
+}
+.buttonContainer{
+    display:flex;
+    justify-content: center;
+}
+
+.gameOver {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.img{
+    
+   
+    background-image: url('../Assets/calavera.png');
+    background-size: cover;
+    width:300px;
+    height: 280px;
+
+}
+

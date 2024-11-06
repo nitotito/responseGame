@@ -21,7 +21,7 @@ const Playing = () =>{
 
     useEffect(() => {
         if (gameOver) {
-            navigate('/gameover', { state: { puntuacion, vidas } }); // Pasamos los datos
+            navigate('/gameover', { state: { puntuacion } }); // Pasamos los datos
         }
     }, [gameOver, navigate, puntuacion, vidas]);
 

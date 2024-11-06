@@ -36,6 +36,11 @@ const HomePage = () => {
     const toggleScoresModal = () => {
       setShowScoresModal(!showScoresModal); // Muestra u oculta el modal de puntuaciones
     };
+
+    const changeName = () => {
+      localStorage.clear();
+      setShowModal(true);
+    }
   
     return (
       <div className="landingcontainer">
@@ -44,6 +49,7 @@ const HomePage = () => {
   
         {/* Botón para abrir el modal de puntuaciones */}
         <button onClick={toggleScoresModal}>Puntuaciones</button>
+        <button onClick={changeName}>Cambiar nombre</button>
   
         {/* Modal para ingresar el nombre */}
         {showModal && (
